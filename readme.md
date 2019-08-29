@@ -124,4 +124,4 @@
         + cart.js       #cart module
         + product.js    # products module
 
-# Vuex:
+

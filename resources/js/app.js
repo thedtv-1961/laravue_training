@@ -12,6 +12,7 @@ Vue.component('my-component', require('./components/MyComponent.vue').default);
 Vue.component('user-dashboard', require('./components/UserDashboard.vue').default);
 Vue.component('form-input', require('./components/FormInput.vue').default);
 Vue.component('event-click', require('./components/EventCLick.vue').default);
+Vue.component('tailwind-css', require('./components/TailWindCSS.vue').default);
 
 
 const app = new Vue({

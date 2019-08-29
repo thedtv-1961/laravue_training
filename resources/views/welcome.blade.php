@@ -8,6 +8,12 @@
 </head>
 <body>
 <div id="app">
+    <br>
+    <br>
+    <tailwind-css></tailwind-css>
+    <br>
+    <br>
+    <br>
     <example-component></example-component>
     <hr>
     <my-component></my-component>
