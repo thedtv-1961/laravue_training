@@ -80,7 +80,7 @@
 - Updating: quá trình này đc gọi bất kì khi dữ liệu `reactive` bị thay đổi hoặc bị tác động cho thay đổi khiến cho component phải re-render.
     * beforeUpdate: dc gọi ngay khi data trên component bị thay đỏi và trc' khi DOM re-render 
     * updated: xảy ra sau `beforeUpdate` ở step này DOM đã đc cập nhật lại
-    
+      
 - Destroy;
     * beforeDestroy: xảy ra trước khi component bị hủy(chuyển từ component này sang componwnt khác, chuyển route,...) tại step 
     này component vaanx còn đầy đủ data, methods... thường dùng để xóa đi các sự kiện không cần thiết sau khi component bị hủy,
@@ -92,3 +92,36 @@
         nghe khi chuyển trang
         ``` 
     * destroyed: data, methods đã bị xóa nhưng có thể làm một số việt như thồng báo cho remote server là component cừa bị hủy.
+
+# Data-binding & Event:
+- Data:
+    + Lazy: v-model.lazy
+    + Number: v-model.number
+    + Trim: v-model.trim
+    
+- Event: Click: Các sự kiện click đều có thể thực thi VD: @click="counter++"
+    + `click.stop`: 
+    + `click.prevent`: 
+    + `click.once`: 
+    + `click.capture`: 
+    + `click.self`: 
+    + `click.passive`: 
+
+# Vuex Structure:
+
++ index.html
++ main.js
++ api
+    + ... # abstractions for making API requests
++ components
+    + App.vue
+    + ...
++ store
+    + index.js          # where we assemble modules and export the store
+    + actions.js        # root actions
+    + mutation.js       # root mutations
+    + modules
+        + cart.js       #cart module
+        + product.js    # products module
+
+# Vuex:
